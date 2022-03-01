@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorraine Boehringer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <a href="#"><img class="logo" src="img/LB Logo.png" alt="initials LG"></a>
+        </div>
+        <div class="hamB">
+            <div class="line top-line"></div>
+            <div class="line mid-line"></div>
+            <div class="line bot-line"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#project-link">Work <img class="nav-icons" src="img/Work.png" alt="breifcase icon"></a></li>
+            <li><a href="#about-link">About <img class="nav-icons" src="img/About.png"
+                        alt="paper with exclamation point icon"></a></li>
+            <li><a href="#contact-link">Contact <img class="nav-icons" src="img/Contact.png" alt="email icon"></a></li>
+            <li><a target="_blank" href="Lorraine's Resume.pdf">Resume <img class="nav-icons" src="img/Resume.png" alt="resume icon"></a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <header class="land-container ">
+        <div>
+            <h1>Lorraine Boehringer</h1>
+            <h2>UX/UI Designer</h2>
+        </div>
+        <img class="lor-outline" src="img/LG.png" alt="drawing of Lorraine">
+    </header>
+
+    <main>
+        <div class="project-container" id="project-link">
+            <div class="project-img">
+                <img src="img/hands.png" alt="hands holding a heart and the world">
+                <div class="project-button-container">
+                    <p class="project-title">WORLD CITIZEN CHARITY APP DESIGN</p>
+                    <p class="project-description">Donating made easier</p>
+                    <a href="project-1.html">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-img proj-2">
+                <img src="img/SMA.png" alt="">
+                <div class="project-button-container">
+                    <p class="project-title">SOCIAL MEDIA APP AND WEBSITE DESIGN</p>
+                    <p class="project-description">Social media for tech enthusiasts</p>
+                    <a href="project-2.html">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project-img proj-3">
+                <img src="img/more knick.png" alt="more knickknack text with flower logo">
+                <div class="project-button-container">
+                    <p class="project-title">ANTIQUE SALES WEBSITE DESIGN</p>
+                    <p class="project-description">Antique e-Commerce</p>
+                    <a href="project-3.html">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-container" id="about-link">
+            <div class="about-info">
+                <h3 class="hello">Hello.</h3>
+                <p class="p1">I’m Lorraine. I have always enjoyed being creative and using that creativity in all aspects of my life - whether for work or in my personal life. I found my way into design unconventionally. After years as an educator, I decided to begin teaching myself basic design and have been on a journey ever since.
+
+                </p>
+                <p class="p2">
+                    I am fascinated with all aspects of design, especially visual design. I enjoy expressing my creativity through typography, photography, and digital art using Adobe Illustrator and Photoshop.
+                    <br><br>
+                    After completing a 7 month UI/UX program, I discovered a newfound love of design combined with my passion for tech by creating website and application designs.
+                </p>
+                <img class="about-pic" src="img/LB Pic.png" alt="Lorraine">
+                <div class="resume-container" id="resume-link">
+                    <a target="_blank" href="Lorraine's Resume.pdf">
+                        <div class="resume-work resume">RESUME</div>
+                    </a>
+                    <a href="works.html">
+                        <div class="resume-work work">OTHER WORK</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="email-container" id="contact-link">
+            <h3>GET IN TOUCH.</h3>
+            <form class="email-form" action="https://formsubmit.co/8f94d737845ba49ca074ce85534a47a4" method="POST">
+                <label for="name">Name</label>
+                <input class="nameEmail" id="name" type="text" name="name" placeholder="" required>
+                <label for="email">Email</label>
+                <input class="nameEmail" id="email" type="email" name="email" placeholder="">
+                <label for="message">Message</label>
+                <textarea class="message-box" id="message" rows="5" cols="60" name="message" placeholder=""></textarea>
+                <input type="hidden" name="_subject" value="Lorraine's Portfolio">
+                <input type="hidden" name="_next" value="https://loboeh.github.io/portfolio/e-response.html">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Lorraine Boehringer | Desinger</p>
+        <div class="foot-img-container">
+            <a href="https://www.linkedin.com/in/loboeh/" target="_blank" rel="noreferrer"><img class="foot-img" src="img/linkedin.png" alt="linkedin icon"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
