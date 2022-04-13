@@ -43,16 +43,14 @@ a {
 .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     list-style: none;
     gap: 43px;
     margin-right: 40px;
+    padding: 120px 0 0 16px;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     line-height: 27px;
-    text-transform: uppercase;
     position: fixed;
     top: 0;
     right: -40px;
@@ -65,11 +63,6 @@ a {
     z-index: 3;
 }
 
-.close {
-    margin: 2px 46px 0 0;
-    cursor: pointer;
-}
-
 .nav-icons {
     height: auto;
     width: 30px;
@@ -78,8 +71,14 @@ a {
 .nav-links a {
     color: #003B6F;
     display: flex;
-    align-self: center;
     gap: 43px;
+}
+
+.nav-close-label {
+    color: #003B6F;
+    position: fixed;
+    right: 70px;
+    top: 15px;
 }
 
 .nav-links.open {
@@ -89,18 +88,16 @@ a {
     background-color: #FFFFFF;
 }
 
-.nav-links a:hover,
-.close:hover {
+.nav-links a:hover {
     color: #A33E94;
 }
 
 .hamB {
     position: fixed;
     cursor: pointer;
-    right: 1px;
+    right: 17px;
     top: 15px;
     z-index: 4;
-    margin-right: 16px;
 }
 
 .line {
@@ -322,7 +319,6 @@ a {
     grid-area: resume;
     background: #003B6F;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
 }
 
 .work {
@@ -386,7 +382,7 @@ a {
 }
 
 .email-form button {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
     width: 100px;
     height: 42px;
@@ -448,7 +444,7 @@ footer {
 .project-main {
     display: flex;
     flex-direction: column;
-    padding: 0 8px 45px 8px;
+    padding: 0 8px 65px 8px;
 }
 
 .project-main > h1, h2, h3{
@@ -458,17 +454,23 @@ footer {
     padding-bottom: 4px;
 }
 
+.section-space, h2{
+    margin-top: 24px;
+}
+
 .project-main > p {
     font-size: 14px;
     line-height: 21px;
-    padding-bottom: 16px;
+}
+
+.touching-p {
+    margin-top: 4px;
 }
 
 .project-main > ul, ol{
     font-size: 14px;
     line-height: 21px;
-    padding: 0 0 25px 40px;
-    margin: -10px;
+    padding-left: 30px;
     width: 100%;
 }
 
@@ -477,11 +479,7 @@ footer {
     max-width: 1360px;
     height: auto;
     align-self: center;
-    padding-bottom: 16px;
-}
-
-.p2-challenges {
-    margin-bottom: 10px;
+    padding-top: 8px;
 }
 
 .challenge {
@@ -491,7 +489,6 @@ footer {
 .p2-img-container {
     display: flex;
     justify-content: center;
-    background: #003B6F;
     margin-bottom: 16px;
     align-self: center;
 }
@@ -503,17 +500,20 @@ footer {
 .p2-img-container img{
     max-width: 362px;
     height: auto;
-    padding: 30px;
+    padding: 16px 4px 0 4px;
 }
 
 .p2-img-container-placeholder {
     display: none;
 }
 
+.takeaways {
+    padding-top: 8px;
+}
+
 .p3-img-container {
     display: flex;
     justify-content: center;
-    background: #003B6F;
     margin-bottom: 16px;
 }
 
@@ -522,13 +522,24 @@ footer {
     padding: 10px;
 }
 
+.flower-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.flower {
+    width: 100%;
+    max-width: 1360px;
+    height: auto;
+    align-self: center;
+}
+
 .knacks-img-container {
-    border: 2px solid #003B6F;
     margin-bottom: 16px;
 }
 
 .knacks-img-container img {
-    padding: 77px 8px 61px 8px;
+    padding: 8px 8px 24px 8px;
 }
 
 .photography {
@@ -588,7 +599,6 @@ footer {
 
 @media (min-width: 500px) {
     .hamB,
-    .close,
     .nav-icons {
         display: none;
     }
@@ -618,6 +628,10 @@ footer {
 
     .nav-links li{
         padding: 0;
+    }
+
+    .nav-close-label {
+        display: none;
     }
 
     /* email response page */
@@ -767,7 +781,11 @@ footer {
     }
 
     .project-main {
-        padding: 0 40px 45px 40px;
+        padding: 0 40px 180px 40px;
+    }
+
+    .research-img {
+        padding: 20px 0 16px 0;
     }
 
     .project-main > h1, h2, h3{
@@ -776,25 +794,23 @@ footer {
         padding-bottom: 8px;
     }
 
+    .section-space, h2{
+        margin-top: 80px;
+    }
+
     .project-main > p {
         font-size: 24px;
         line-height: 36px;
-        padding-bottom: 40px;
+        padding: 0;
     }
 
     .project-main > ul, ol{
         font-size: 24px;
         line-height: 36px;
-        padding: 0 0 80px 80px;
-        margin: -35px;
     }
 
-    .research-img {
-        padding-bottom: 40px;
-    }
-
-    .p2-challenges {
-        margin-bottom: 30px;
+    .p2-h1 {
+        margin-top: 64px;
     }
     
     .challenge {
@@ -804,8 +820,7 @@ footer {
     .p2-img-container {
         justify-content: space-between;
         width: 764px;
-        padding: 16px;
-        margin-bottom: 40px;
+        margin: 20px 0 80px 0;
     }
     
     .p2-img-container img{
@@ -818,7 +833,11 @@ footer {
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;
-        color: #FFFFFF;
+        text-align: right;
+    }
+
+    .p2-img {
+        margin: 0 41px 0 41px;
     }
 
     .p2-img-container-placeholder {
@@ -839,22 +858,34 @@ footer {
 
     .p3-2nd-img {
         width: fit-content;
-        padding: 30px;
     }
 
     .p3-2nd-img img{
         max-width: 1020px
     }
+
+    .flower-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .flower {
+        width: 640px;
+        height: 640px;
+    }
     
     .knacks-img-container {
         width: 764px;
-        margin-bottom: 40px;
         align-self: center;
     }
     
     .knacks-img-container img {
         width: 732px;
-        padding: 184px 16px 184px 16px;
+        padding: 20px 16px 0 16px;
+    }
+
+    .p3-challenge-3 {
+        margin-top: 14px;
     }
 
     .works {
@@ -1056,6 +1087,10 @@ footer {
     
     .foot-img-container {
         margin-right: 20px;
+    }
+
+    .notes-first-img {
+        margin-bottom: 64px;
     }
 
     .notes-img {

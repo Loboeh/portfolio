@@ -1,10 +1,6 @@
-const hamburger = document.querySelectorAll(".hamB, .nav-links li");
+const hamburger = document.querySelectorAll(".hamB, .nav-links li, .overlay");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
-
-const email = document.querySelectorAll(".fa-envelope, .fa-times-circle");
-const eContainer = document.querySelector(".email-container");
-
 
 // activates the listener when a link is clicked within the dropdown menu
 hamburger.forEach((hamburger) => {
@@ -18,16 +14,3 @@ hamburger.forEach((hamburger) => {
         });
     });
 });
-
-//toggle for the envelope-icon and the x-icon (to open/close the email pop-up)
-email.forEach((email) => {
-    email.addEventListener("click", () => {
-        eContainer.classList.toggle("eToggle");
-
-    })
-})
-
-
-
-
-
